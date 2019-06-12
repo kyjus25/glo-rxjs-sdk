@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "declaration": false,
+    "emitDecoratorMetadata": true,
+    "strictNullChecks": false,
+    "experimentalDecorators": true,
+    "allowJs": true,
+    "types": [
+      // add node as an option
+      "node"
+    ],
+    "lib": ["es6", "dom"],
+    "mapRoot": "./",
+    "module": "es6",
+    "moduleResolution": "node",
+    "outDir": "../dist/out-tsc",
+    "sourceMap": true,
+    "target": "es6",
+    "typeRoots": [
+      "../node_modules/@types"
+    ]
+  },
+  "include": [
+    "src",
+    "types"
+  ]
+}
