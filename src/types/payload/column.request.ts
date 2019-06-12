@@ -1,5 +1,5 @@
 
 export interface ColumnBody {
   name: string;
-  position: number;
+  position?: number;
 }

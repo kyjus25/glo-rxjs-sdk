@@ -27,16 +27,16 @@ export interface CardRequest {
 
 export interface CardBody {
   name: string;
-  position: number;
-  description: {
+  position?: number;
+  description?: {
     text: string;
   };
   column_id: string;
-  assignees: {
+  assignees?: {
     id: string;
   };
-  labels: {
+  labels?: {
     id: string;
   };
-  due_date: string;
+  due_date?: string;
 }
