@@ -1,10 +1,11 @@
 {
   "$schema": "./node_modules/ng-packagr/package.schema.json",
   "name": "@kyjus25/glo-rxjs-sdk",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "MIT",
   "scripts": {
-    "build": "ng-packagr -p package.json"
+    "build": "ng-packagr -p package.json",
+    "publish": "npm run build; npm publish --access=public ./target/dist/"
   },
   "private": false,
   "description": "JavaScript RxJS SDK for GitKraken Glo APIs",
