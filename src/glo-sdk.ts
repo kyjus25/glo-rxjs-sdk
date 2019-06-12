@@ -8,9 +8,6 @@ import {CommentCrud} from './crud/comment.crud';
 import {LabelCrud} from './crud/label.crud';
 import {CardCrud} from './crud/card.crud';
 
-
-
-
 @Injectable()
 export class GloSDK {
 

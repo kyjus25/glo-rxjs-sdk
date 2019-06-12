@@ -3,7 +3,6 @@ import {Observable} from 'rxjs/Observable';
 import {CardBody, CardRequest, CardRequestFields} from '../types/payload/card.request';
 import {Card} from '../types/return/card';
 
-
 export class CardCrud extends RequestService {
   public get(boardId: string, query?: CardRequest): Observable<Card[]> {
     const queryString = this.buildQueryString(query);
