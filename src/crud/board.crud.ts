@@ -4,7 +4,6 @@ import {Board} from '../types/return/board';
 import {BoardBody, BoardRequest, BoardRequestFields} from '../types/payload/board.request';
 
 export class BoardCrud extends RequestService {
-
   public get(query?: BoardRequest): Observable<Board[]> {
     const queryString = this.buildQueryString(query);
     return this.request('get', '/boards', null, queryString);

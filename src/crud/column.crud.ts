@@ -4,7 +4,6 @@ import {Column} from '../types/return/column';
 import {ColumnBody} from '../types/payload/column.request';
 
 export class ColumnCrud extends RequestService {
-
   public create(boardId: string, body: ColumnBody): Observable<Column> {
     return this.request('post', '/boards/' + boardId + '/columns', body, null);
   }
