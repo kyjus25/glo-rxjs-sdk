@@ -6,6 +6,7 @@
   "scripts": {
     "build": "ng-packagr -p package.json"
   },
+  "private": false,
   "description": "JavaScript RxJS SDK for GitKraken Glo APIs",
   "peerDependencies": {
     "rxjs": "^5.5.6",
