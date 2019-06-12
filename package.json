@@ -1,7 +1,7 @@
 {
   "$schema": "./node_modules/ng-packagr/package.schema.json",
   "name": "@axosoft/glo-rxjs-sdk",
-  "version": "1.1.0-SNAPSHOT",
+  "version": "1.0.0",
   "license": "MIT",
   "scripts": {
     "build": "ng-packagr -p package.json"
@@ -11,6 +11,16 @@
     "typescript": "^2.0.0"
   },
   "devDependencies": {
+    "@angular/animations": "^5.2.11",
+    "@angular/common": "^5.2.0",
+    "@angular/forms": "^5.2.0",
+    "@angular/http": "^5.2.0",
+    "@angular/platform-browser": "^5.2.0",
+    "@angular/platform-browser-dynamic": "^5.2.0",
+    "@angular/router": "^5.2.0",
+    "@angular/core": "^5.2.9",
+    "@angular/compiler": "^5.2.0",
+    "@angular/compiler-cli": "^5.2.0",
     "@types/node": "^6.0.106",
     "ng-packagr": "^3.0.2",
     "rxjs-tslint-rules": "^3.17.0",
@@ -24,6 +34,5 @@
       "entryFile": "index.ts"
     },
     "dest": "./target/dist"
-  },
-  "repository": "github:pavlovmedia/ng-pavlov-rest#master"
+  }
 }
