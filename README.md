@@ -21,7 +21,7 @@ You must pass in an auth token before making calls. All method calls return an o
 
 ```javascript
 // Import the GloSDK Module
-import {GloSDKModule} from '@axosoft/glo-rxjs-sdk';
+import {GloSDKModule} from '@kyjus25/glo-rxjs-sdk';
 
 @NgModule({
   imports: [
@@ -33,7 +33,7 @@ export class AppModule {}
 
 ```javascript
 // Usage
-import {GloSDK} from '@axosoft/glo-rxjs-sdk';
+import {GloSDK} from '@kyjus25/glo-rxjs-sdk';
 
 @Component({
   providers: [],
