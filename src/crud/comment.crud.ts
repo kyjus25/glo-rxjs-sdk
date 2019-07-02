@@ -12,7 +12,7 @@ export class CommentCrud extends RequestService {
     return this.request('post', '/boards/' + boardId + '/cards/' + cardId + '/comments', body, null);
   }
   public batchCreate(boardId: string, cardId: string, body: CommentBody[]): Observable<Comment[]> {
-    return this.request('post', '/boards/' + boardId + '/cards/' + cardId + '/comments/batch', body, null);
+    return this.request('post', '/boards/' + boardId + '/cards/' + cardId + '/comments/batch', {comments: body}, null);
   }
   public update(boardId: string, cardId: string, commentId: string, body: CommentBody): Observable<Comment> {
     return this.request('post', '/boards/' + boardId + '/cards/' + cardId + '/comments/' + commentId, body, null);

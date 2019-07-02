@@ -16,7 +16,7 @@ export class CardCrud extends RequestService {
     return this.request('post', '/boards/' + boardId + '/cards', body, null);
   }
   public batchCreate(boardId: string, body: CardBody[]): Observable<Card[]> {
-    return this.request('post', '/boards/' + boardId + '/cards/batch', body, null);
+    return this.request('post', '/boards/' + boardId + '/cards/batch', {cards: body}, null);
   }
   public read(boardId: string, cardId: string, query?: CardRequestFields[] | string[]): Observable<Card> {
     const queryString = this.buildQueryString(query);

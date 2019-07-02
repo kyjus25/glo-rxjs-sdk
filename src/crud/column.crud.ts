@@ -8,7 +8,7 @@ export class ColumnCrud extends RequestService {
     return this.request('post', '/boards/' + boardId + '/columns', body, null);
   }
   public batchCreate(boardId: string, body: ColumnBody[]): Observable<Column[]> {
-    return this.request('post', '/boards/' + boardId + '/columns/batch', body, null);
+    return this.request('post', '/boards/' + boardId + '/columns/batch', {columns: body}, null);
   }
   public update(boardId: string, columnId: string, body: ColumnBody): Observable<Column> {
     return this.request('post', '/boards/' + boardId + '/columns/' + columnId, body, null);
