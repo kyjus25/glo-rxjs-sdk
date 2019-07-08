@@ -15,5 +15,5 @@ export interface AttachmentRequest {
 }
 
 export interface AttachmentBody {
-  file: string;
+  file: any;
 }

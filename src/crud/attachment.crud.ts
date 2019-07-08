@@ -8,7 +8,7 @@ export class AttachmentCrud extends RequestService {
     const queryString = this.buildQueryString(query);
     return this.request('get', '/boards/' + boardId + '/cards/' + cardId + '/attachments', null, queryString);
   }
-  public create(boardId: string, cardId: string, body: AttachmentBody): Observable<Attachment> {
+  public create(boardId: string, cardId: string, body: any): Observable<Attachment> {
     return this.request('post', '/boards/' + boardId + '/cards/' + cardId + '/attachments', body, null);
   }
 }

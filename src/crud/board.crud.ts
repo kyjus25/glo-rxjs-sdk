@@ -12,7 +12,7 @@ export class BoardCrud extends RequestService {
     return this.request('post', '/boards', body, null);
   }
   public read(boardId: string, query?: BoardRequestFields[] | string[]): Observable<Board> {
-    const queryString = this.buildQueryString(query);
+    const queryString = this.buildQueryString({fields: query});
     return this.request('get', '/boards/' + boardId, null, queryString);
   }
   public update(boardId: string, body: BoardBody): Observable<Board> {
